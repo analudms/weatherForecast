@@ -13,7 +13,6 @@ body {
     width: 100vw;
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
     background-size: cover; 
-
 }
 
 .bigBox {
@@ -44,8 +43,12 @@ body {
     background-color: #7c7c7c2b;
     cursor: pointer;
     float: right;
+    transition: transform 0.5s;
 }
 
+.button:hover {
+    transform: scale(1.4);
+}
 
 .search_image {
     width: 20px;
