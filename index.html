@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Previsão do tempo</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="bigBox">
-        <input class="inputCity" placeholder="Digite o nome da cidade">
-        <button class="button"></button>
+      <input class="inputCity" placeholder="Digite o nome da cidade" />
+      <button class="button">
+        <img class="search_image" src="./assets/lupa.svg" alt="lupa de busca" />
+      </button>
 
-        <h2></h2>
+      <div class="mediumBox">
+        <h2 class="city">Belo H</h2>
 
-        <p></p>
+        <p class="temp">4545454</p>
 
-        <img alt="nuvem" src="./assets/nuvem.png" >
+        <div class="smallBox">
+          <img class="cloud" src="./assets/nuvem.png" alt="nuvem" />
 
-        <p></p>
+          <p class="description">Nublado</p>
+        </div>
+
+        <p class="moisture">Umidade</p>
+
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
