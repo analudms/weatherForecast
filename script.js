@@ -1,7 +1,9 @@
+import {key} from "./config.js"
+
 const button = document.querySelector(".button");
 const div = document.querySelector(".smallBox")
 
-const key = "57f636a8d430caa0e7926da39fc7e087";
+
 
 function dataOnScreen(data) {
     console.log(data)
