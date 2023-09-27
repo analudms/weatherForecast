@@ -1,4 +1,5 @@
 const button = document.querySelector(".button");
+const div = document.querySelector(".smallBox")
 
 const key = "57f636a8d430caa0e7926da39fc7e087";
 
@@ -10,9 +11,8 @@ function dataOnScreen(data) {
     document.querySelector(".moisture").innerHTML = data.main.humidity + "% de umidade";
     document.querySelector(".cloud").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
 
-
-
-}
+    div.removeAttribute("style");
+  }
 
 async function searchCity(city) {
   const data =
@@ -28,12 +28,7 @@ function clickButton() {
   searchCity(city);
 }
 
-
-
-
-
-
-
 button.addEventListener("click", (event) => {
-  clickButton();
+  clickButton(); 
 });
+
